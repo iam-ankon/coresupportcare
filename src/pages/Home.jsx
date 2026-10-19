@@ -149,14 +149,14 @@ export default function Home() {
 
       {/* Circle feature badges */}
       <div className="cdc-shell">
-        <Reveal className="cdc-circle-row" style={{ paddingBottom: "1rem" }}>
+        <Reveal className="cdc-circle-row" style={{ paddingBottom: "0" }}>
           <CircleFeature color="sky" icon={HomeIcon} label="Fabulous SIL and STA Homes" />
           <CircleFeature color="purple" icon={Sparkles} label="Exciting Variety of Day Programs" />
         </Reveal>
       </div>
 
       {/* Real Moments corkboard — genuine, unposed photos from our programs */}
-      <section className="cdc-section" style={{ paddingTop: "1.5rem", paddingBottom: "3.5rem" }}>
+      <section className="cdc-section" style={{ paddingTop: "0.5rem", paddingBottom: "3.5rem" }}>
         <div className="cdc-shell">
           <Reveal className="cdc-section-head">
             <span className="cdc-script">Real families, real Core</span>
