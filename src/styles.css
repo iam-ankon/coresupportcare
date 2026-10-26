@@ -593,7 +593,7 @@ html, body { overflow-x: hidden; }
 @media (max-width: 720px) {
   .cdc-nav, .cdc-navbar-right { display: none; }
   .cdc-menu-btn { display: flex; flex: none; }
-  .cdc-utility-inner { padding: .65rem 0; }
+  .cdc-utility-inner { display: flex; justify-content: space-between; padding: .65rem 0; }
   .cdc-utility-actions { gap: .5rem; }
   .cdc-utility-actions .cdc-btn:not(.cdc-menu-btn) { display: none; }
   .cdc-brand strong { max-width: 60vw; font-size: 1.15rem; }
