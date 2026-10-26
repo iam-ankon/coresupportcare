@@ -115,7 +115,7 @@ html, body { overflow-x: hidden; }
 .cdc-utility-inner .cdc-utility-actions { justify-self: end; }
 .cdc-google-rating.cdc-google-rating-center { justify-self: center; color: var(--navy); }
 .cdc-google-rating.cdc-google-rating-center strong { color: var(--navy); }
-@media (max-width: 960px) { .cdc-google-rating-center { display: none; } }
+@media (max-width: 960px) { .cdc-google-rating.cdc-google-rating-center { display: none; } }
 .cdc-brand { display: flex; align-items: center; gap: .6rem; min-width: 0; }
 .cdc-brand strong { font-family: 'Baloo 2', sans-serif; font-size: 1.7rem; line-height: 1.1; font-weight: 800; color: var(--sky); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 .cdc-brand strong span { color: var(--navy); }
@@ -221,6 +221,7 @@ html, body { overflow-x: hidden; }
 .cdc-mobile-nav.open { display: flex; transform: translateX(0); }
 .cdc-mobile-nav-head { display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 1.3rem; border-bottom: 1px solid rgba(255,255,255,.1); margin-bottom: .5rem; }
 .cdc-mobile-nav-head .cdc-brand strong { font-size: 1.15rem; }
+.cdc-mobile-rating { padding: .8rem 1.3rem; border-bottom: 1px solid rgba(255,255,255,.1); font-size: .85rem; }
 .cdc-mobile-nav a {
   color: var(--white); padding: .9rem 1.5rem; font-weight: 600; font-size: .96rem;
   display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.06);

@@ -167,6 +167,15 @@ export default function Header() {
             </span>
             <button className="cdc-menu-btn" aria-label="Close menu" onClick={() => setMenuOpen(false)}><X size={18} /></button>
           </div>
+          <div className="cdc-google-rating cdc-mobile-rating" aria-label="Rated 5.0 stars on Google">
+            <GoogleLogo size={16} />
+            <span className="cdc-google-rating-stars">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} size={12} fill="currentColor" strokeWidth={0} />
+              ))}
+            </span>
+            <strong>5.0</strong> Google Rating
+          </div>
           {NAV_LINKS.map((l) => (
             <React.Fragment key={l.label}>
               <Link to={l.to} onClick={() => setMenuOpen(false)}>{l.label} <ChevronRight size={16} /></Link>
