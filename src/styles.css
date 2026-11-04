@@ -551,7 +551,8 @@ html, body { overflow-x: hidden; }
 }
 
 /* Footer */
-.cdc-footer { background: var(--sky-dark); color: #DCE1FF; padding: 4.5rem 0 1.75rem; position: relative; }
+.cdc-footer { background: var(--purple); color: #B9C2D6; padding: 4.5rem 0 1.75rem; position: relative; }
+.cdc-footer-logo-badge { background: var(--white); border-radius: .7rem; padding: .5rem .7rem; display: inline-flex; width: fit-content; }
 .cdc-footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--grad-fun); background-size: 300% auto; animation: cdc-gradflow 8s linear infinite; }
 .cdc-social a { transition: transform .2s cubic-bezier(.34,1.56,.64,1), background .2s ease, border-color .2s ease; }
 .cdc-social a:hover { transform: translateY(-3px) scale(1.1); background: var(--grad-fun); border-color: transparent; }

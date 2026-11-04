@@ -8,7 +8,9 @@ export default function Footer() {
       <div className="cdc-shell-wide">
         <div className="cdc-footer-top">
           <div className="cdc-footer-brand">
-            <img src="/brand/logo-icon.png" alt="Core Support Care" className="cdc-footer-logo" />
+            <span className="cdc-footer-logo-badge">
+              <img src="/brand/logo-icon.png" alt="Core Support Care" className="cdc-footer-logo" />
+            </span>
             <div style={{ marginTop: "1rem", fontFamily: "'Baloo 2', sans-serif", fontSize: "1.4rem", fontWeight: 700, color: "var(--white)" }}>
               Core Support Care
             </div>
