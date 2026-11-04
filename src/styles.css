@@ -551,7 +551,7 @@ html, body { overflow-x: hidden; }
 }
 
 /* Footer */
-.cdc-footer { background: var(--navy); color: #B9C2D6; padding: 4.5rem 0 1.75rem; position: relative; }
+.cdc-footer { background: var(--purple); color: #B9C2D6; padding: 4.5rem 0 1.75rem; position: relative; }
 .cdc-footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--grad-fun); background-size: 300% auto; animation: cdc-gradflow 8s linear infinite; }
 .cdc-social a { transition: transform .2s cubic-bezier(.34,1.56,.64,1), background .2s ease, border-color .2s ease; }
 .cdc-social a:hover { transform: translateY(-3px) scale(1.1); background: var(--grad-fun); border-color: transparent; }
@@ -565,11 +565,6 @@ html, body { overflow-x: hidden; }
 .cdc-footer-contact-row { display: flex; align-items: center; gap: .6rem; font-size: .9rem; color: var(--white); }
 .cdc-footer-badges { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin-top: 1.5rem; }
 .cdc-footer-divider { border: none; border-top: 1px solid rgba(255,255,255,.12); margin: 1rem 0 2rem; }
-.cdc-footer-locations { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-.cdc-footer-locations h4 { margin-bottom: 1.2rem; }
-.cdc-loc-cols { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem 1.5rem; }
-.cdc-loc-cols a { display: flex; align-items: center; gap: .3rem; font-size: .88rem; padding: .35rem 0; }
-.cdc-loc-cols a:hover { color: var(--pink); }
 .cdc-footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding-top: 1.8rem; border-top: 1px solid rgba(255,255,255,.12); font-size: .82rem; }
 .cdc-footer-bottom .cdc-social a { border-color: rgba(255,255,255,.25); }
 
@@ -587,7 +582,6 @@ html, body { overflow-x: hidden; }
   .cdc-suburb-grid { grid-template-columns: repeat(3, 1fr); }
   .cdc-contact-grid { grid-template-columns: 1fr; }
   .cdc-footer-top { grid-template-columns: 1fr 1fr; }
-  .cdc-footer-locations { grid-template-columns: 1fr; }
   .cdc-badges { display: none; }
 }
 @media (max-width: 720px) {
@@ -599,7 +593,6 @@ html, body { overflow-x: hidden; }
   .cdc-brand strong { max-width: 60vw; font-size: 1.15rem; }
   .cdc-services-grid, .cdc-blocks, .cdc-gallery-grid, .cdc-feature-grid { grid-template-columns: 1fr; }
   .cdc-footer-top { grid-template-columns: 1fr; }
-  .cdc-loc-cols { grid-template-columns: 1fr 1fr; }
   .cdc-cta-inner { text-align: center; justify-content: center; }
   .cdc-suburb-grid { grid-template-columns: repeat(2, 1fr); }
   .cdc-pagehero-copy h1 br { display: none; }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Phone, Mail, Instagram, Facebook, Youtube, ArrowRight } from "lucide-react";
+import { Phone, Mail, Instagram, Facebook, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -42,25 +42,6 @@ export default function Footer() {
         </div>
 
         <hr className="cdc-footer-divider" />
-
-        <div className="cdc-footer-locations">
-          <div>
-            <h4>Day Programs</h4>
-            <div className="cdc-loc-cols">
-              <Link to="/day-programs">Greater Sydney <ArrowRight size={13} /></Link>
-              <Link to="/day-programs">New South Wales <ArrowRight size={13} /></Link>
-            </div>
-          </div>
-          <div>
-            <h4>Other Services</h4>
-            <div className="cdc-loc-cols">
-              <Link to="/other-services">Community Access <ArrowRight size={13} /></Link>
-              <Link to="/other-services">Support Coordination <ArrowRight size={13} /></Link>
-              <Link to="/other-services">Homecare <ArrowRight size={13} /></Link>
-              <Link to="/careers">Work Experience <ArrowRight size={13} /></Link>
-            </div>
-          </div>
-        </div>
 
         <div className="cdc-footer-bottom">
           <span>© {new Date().getFullYear()} Core Support Care Pty Ltd. ABN 45 123 456 789.</span>
