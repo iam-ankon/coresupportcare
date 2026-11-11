@@ -34,7 +34,7 @@ export default function ServiceDetail() {
                 className={`cdc-service-sidebar-item${s.slug === slug ? " active" : ""}`}
               >
                 <HeartHandshake size={14} />
-                <span>{s.title}</span>
+                <span>{s.navLabel || s.title}</span>
                 <ArrowRight size={15} className="cdc-dropdown-arrow" />
               </Link>
             ))}

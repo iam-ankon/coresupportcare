@@ -279,6 +279,7 @@ export const SPECIALISED_SERVICES = [
   },
   {
     slug: "assist-daily-tasks-shared-living",
+    navLabel: "Assist – Daily Tasks/Shared Living",
     title: "Building Everyday Skills & Independence",
     intro: "We provide personalised support to help participants build confidence, develop practical life skills and enjoy greater independence in their everyday lives.",
     items: [

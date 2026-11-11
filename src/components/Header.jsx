@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Menu, X, Phone, Instagram, Facebook, Youtube, ChevronRight, Star } from "lucide-react";
 import { SPECIALISED_SERVICES } from "../data.js";
 
-const SERVICE_LINKS = SPECIALISED_SERVICES.map((s) => ({ label: s.title, to: `/our-services/${s.slug}` }));
+const SERVICE_LINKS = SPECIALISED_SERVICES.map((s) => ({ label: s.navLabel || s.title, to: `/our-services/${s.slug}` }));
 
 function GoogleLogo({ size = 14 }) {
   return (
