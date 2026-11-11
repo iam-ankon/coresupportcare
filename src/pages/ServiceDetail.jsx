@@ -55,12 +55,12 @@ export default function ServiceDetail() {
             <Link to="/refer-a-participant" className="cdc-btn cdc-btn-pink" style={{ alignSelf: "flex-start", marginTop: ".5rem" }}>
               Refer a Participant <ArrowRight size={16} />
             </Link>
-            {service.closingTitle && (
-              <div style={{ marginTop: "1rem", paddingTop: "1.5rem", borderTop: "1px solid var(--line)" }}>
-                <h2 style={{ fontFamily: "'Baloo 2', sans-serif", color: "var(--navy)", fontSize: "1.3rem" }}>{service.closingTitle}</h2>
-                <p style={{ color: "var(--ink-soft)", fontSize: "1.05rem", marginTop: ".6rem" }}>{service.closingText}</p>
+            {service.extraSections?.map((sec, i) => (
+              <div key={sec.title} style={i === 0 ? { marginTop: "1rem", paddingTop: "1.5rem", borderTop: "1px solid var(--line)" } : undefined}>
+                <h2 style={{ fontFamily: "'Baloo 2', sans-serif", color: "var(--navy)", fontSize: "1.3rem" }}>{sec.title}</h2>
+                {sec.text && <p style={{ color: "var(--ink-soft)", fontSize: "1.05rem", marginTop: ".6rem" }}>{sec.text}</p>}
               </div>
-            )}
+            ))}
           </Reveal>
         </div>
       </section>
