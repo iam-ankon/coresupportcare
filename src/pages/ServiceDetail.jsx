@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Heart } from "lucide-react";
+import { ArrowRight, Heart } from "lucide-react";
 import { PageHero, Reveal } from "../components/ui.jsx";
 import { SPECIALISED_SERVICES, IMG } from "../data.js";
 import { useSEO } from "../hooks/useSEO.js";
@@ -46,7 +46,7 @@ export default function ServiceDetail() {
             <ul style={{ display: "flex", flexDirection: "column", gap: ".8rem", listStyle: "none", padding: 0 }}>
               {service.items.map((item) => (
                 <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: ".6rem", color: "var(--ink-soft)" }}>
-                  <CheckCircle2 size={18} color="var(--sky)" style={{ flex: "none", marginTop: "2px" }} />
+                  <Heart size={18} color="var(--purple)" style={{ flex: "none", marginTop: "2px" }} />
                   {item}
                 </li>
               ))}
@@ -54,6 +54,12 @@ export default function ServiceDetail() {
             <Link to="/refer-a-participant" className="cdc-btn cdc-btn-pink" style={{ alignSelf: "flex-start", marginTop: ".5rem" }}>
               Refer a Participant <ArrowRight size={16} />
             </Link>
+            {service.closingTitle && (
+              <div style={{ marginTop: "1rem", paddingTop: "1.5rem", borderTop: "1px solid var(--line)" }}>
+                <h2 style={{ fontFamily: "'Baloo 2', sans-serif", color: "var(--navy)", fontSize: "1.3rem" }}>{service.closingTitle}</h2>
+                <p style={{ color: "var(--ink-soft)", fontSize: "1.05rem", marginTop: ".6rem" }}>{service.closingText}</p>
+              </div>
+            )}
           </Reveal>
         </div>
       </section>
