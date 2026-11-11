@@ -33,7 +33,7 @@ export default function ServiceDetail() {
                 key={s.slug}
                 className={`cdc-service-sidebar-item${s.slug === slug ? " active" : ""}`}
               >
-                <Heart size={14} />
+                <Heart size={14} fill="currentColor" />
                 <span>{s.title}</span>
                 <ArrowRight size={15} className="cdc-dropdown-arrow" />
               </Link>
@@ -46,7 +46,7 @@ export default function ServiceDetail() {
             <ul style={{ display: "flex", flexDirection: "column", gap: ".8rem", listStyle: "none", padding: 0 }}>
               {service.items.map((item) => (
                 <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: ".6rem", color: "var(--ink-soft)" }}>
-                  <Heart size={18} color="var(--purple)" style={{ flex: "none", marginTop: "2px" }} />
+                  <Heart size={18} color="var(--purple)" fill="var(--purple)" style={{ flex: "none", marginTop: "2px" }} />
                   {item}
                 </li>
               ))}
