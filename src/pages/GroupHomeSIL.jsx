@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Home, Car, Clock3, HeartHandshake } from "lucide-react";
+import { ArrowUpRight, Home, Car, Clock3 } from "lucide-react";
 import { PageHero, Reveal, tiltHandlers, FeatureTabs } from "../components/ui.jsx";
 import { IMG, SIL_FEATURE_TABS } from "../data.js";
 import { useSEO } from "../hooks/useSEO.js";
@@ -51,7 +51,7 @@ export default function GroupHomeSIL() {
           <ul style={{ display: "flex", flexDirection: "column", gap: ".8rem", listStyle: "none", padding: 0 }}>
             {SIL_SUPPORT_LIST.map((s) => (
               <li key={s.label} style={{ display: "flex", alignItems: "flex-start", gap: ".6rem", color: "var(--ink-soft)" }}>
-                <HeartHandshake size={18} color="var(--purple)" style={{ flex: "none", marginTop: "2px" }} />
+                <img src="/brand/logo-icon.png" alt="" style={{ width: 18, height: 18, flex: "none", marginTop: "2px" }} />
                 <span><strong style={{ color: "var(--navy)" }}>{s.label}:</strong> {s.desc}</span>
               </li>
             ))}

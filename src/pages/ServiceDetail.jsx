@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { ArrowRight, HeartHandshake } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { PageHero, Reveal } from "../components/ui.jsx";
 import { SPECIALISED_SERVICES, IMG } from "../data.js";
 import { useSEO } from "../hooks/useSEO.js";
@@ -33,7 +33,7 @@ export default function ServiceDetail() {
                 key={s.slug}
                 className={`cdc-service-sidebar-item${s.slug === slug ? " active" : ""}`}
               >
-                <HeartHandshake size={14} />
+                <img src="/brand/logo-icon.png" alt="" style={{ width: 16, height: 16, flex: "none" }} />
                 <span>{s.navLabel || s.title}</span>
                 <ArrowRight size={15} className="cdc-dropdown-arrow" />
               </Link>
@@ -48,7 +48,7 @@ export default function ServiceDetail() {
             <ul style={{ display: "flex", flexDirection: "column", gap: ".8rem", listStyle: "none", padding: 0 }}>
               {service.items.map((item) => (
                 <li key={item} style={{ display: "flex", alignItems: "flex-start", gap: ".6rem", color: "var(--ink-soft)" }}>
-                  <HeartHandshake size={18} color="var(--purple)" style={{ flex: "none", marginTop: "2px" }} />
+                  <img src="/brand/logo-icon.png" alt="" style={{ width: 18, height: 18, flex: "none", marginTop: "2px" }} />
                   {item}
                 </li>
               ))}
