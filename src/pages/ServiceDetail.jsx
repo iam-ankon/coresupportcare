@@ -43,6 +43,7 @@ export default function ServiceDetail() {
           <Reveal style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}>
             <p style={{ color: "var(--ink-soft)", fontSize: "1.05rem" }}>{service.intro}</p>
             {service.intro2 && <p style={{ color: "var(--ink-soft)", fontSize: "1.05rem" }}>{service.intro2}</p>}
+            {service.intro3 && <p style={{ color: "var(--ink-soft)", fontSize: "1.05rem" }}>{service.intro3}</p>}
             <h2 style={{ fontFamily: "'Baloo 2', sans-serif", color: "var(--navy)", fontSize: "1.3rem" }}>{service.includesHeading || "What's included"}</h2>
             <ul style={{ display: "flex", flexDirection: "column", gap: ".8rem", listStyle: "none", padding: 0 }}>
               {service.items.map((item) => (

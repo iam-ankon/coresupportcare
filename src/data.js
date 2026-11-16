@@ -267,14 +267,22 @@ export const RESOURCES = [
 export const SPECIALISED_SERVICES = [
   {
     slug: "accommodation-tenancy",
-    title: "Accommodation & Tenancy",
-    intro: "Our team helps participants secure housing that suits their needs — from finding a property through to managing the tenancy day to day.",
+    navLabel: "Accommodation & Tenancy",
+    title: "Tenancy & Accommodation",
+    intro: "At Core Support Care, we believe everyone deserves a safe, comfortable and supportive place to call home.",
+    intro2: "We assist people with disabilities to explore suitable housing options, maintain their tenancies and access the support they need to live as independently as possible. Our team works alongside participants, families, support coordinators and other service providers to help create a stable living environment that reflects each person's needs, choices and goals.",
+    intro3: "Finding and maintaining suitable accommodation can be challenging. We aim to make the process easier by helping participants:",
+    includesHeading: "Tenancy & Housing Support",
     items: [
-      "Help finding and applying for suitable housing",
-      "Support with tenancy agreements and lease paperwork",
-      "Liaising with real estate agents and housing providers",
-      "Ongoing support to maintain a tenancy",
-      "Guidance on SDA (Specialist Disability Accommodation) eligibility",
+      "Explore suitable accommodation options",
+      "Understand tenancy responsibilities and agreements",
+      "Access assistance with housing applications and relevant documentation",
+      "Develop skills to maintain their home and tenancy",
+      "Connect with appropriate housing services and support providers",
+      "Build confidence in managing everyday responsibilities",
+    ],
+    extraSections: [
+      { title: "Our Approach", text: "At Core Support Care, every person has different needs, preferences and goals. We take a person-centred approach, ensuring participants have choice and control over their living arrangements and the support they receive. Our focus is on creating a safe, respectful and welcoming environment where everyone feels valued, supported and empowered." },
     ],
   },
   {
