@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
@@ -6,12 +6,15 @@ import { CtaBand } from "../components/ui.jsx";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
+  const prevPathname = useRef(pathname);
   useEffect(() => {
     if (hash) {
       const el = document.getElementById(hash.slice(1));
-      if (el) { el.scrollIntoView({ behavior: "smooth" }); return; }
+      if (el) { el.scrollIntoView({ behavior: "smooth" }); prevPathname.current = pathname; return; }
     }
-    window.scrollTo(0, 0);
+    const isServiceSidebarSwitch = pathname.startsWith("/our-services/") && prevPathname.current.startsWith("/our-services/");
+    if (!isServiceSidebarSwitch) window.scrollTo(0, 0);
+    prevPathname.current = pathname;
   }, [pathname, hash]);
   return null;
 }

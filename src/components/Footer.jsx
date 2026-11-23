@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
           <div className="cdc-footer-contact">
             <h4>Contact Us</h4>
-            <div className="cdc-footer-contact-row"><Phone size={16} color="var(--pink)" /> 1800 95 6474</div>
+            <div className="cdc-footer-contact-row"><Phone size={16} color="var(--pink)" /> 1800 956 474</div>
             <div className="cdc-footer-contact-row"><Mail size={16} color="var(--pink)" /> info@coresupportcare.com.au</div>
             <Link to="/contact" className="cdc-btn cdc-btn-white" style={{ alignSelf: "flex-start" }}>Get In Touch</Link>
           </div>

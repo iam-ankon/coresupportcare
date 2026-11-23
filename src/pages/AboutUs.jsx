@@ -13,7 +13,7 @@ export default function AboutUs() {
   return (
     <>
       <PageHero eyebrow="Our Story" title="About Core Support Care" img={IMG.about} color="var(--sky)">
-        <p>Proudly serving Greater Sydney since 2018.</p>
+        <p>Proudly serving our participants across the states.</p>
       </PageHero>
 
       <section className="cdc-section">

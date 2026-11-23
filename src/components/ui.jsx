@@ -53,7 +53,7 @@ export function PageHero({ eyebrow, title, children, img, color = "var(--sky)", 
       <span className="cdc-sunburst" aria-hidden="true" />
       <div className="cdc-shell cdc-pagehero-inner">
         <div className="cdc-pagehero-copy">
-          {eyebrow && <span className="cdc-script" style={{ color: "rgba(255,255,255,.85)" }}>{eyebrow}</span>}
+          {eyebrow && <span className="cdc-script" style={{ color: "rgba(255,255,255,.85)", WebkitTextFillColor: "rgba(255,255,255,.85)" }}>{eyebrow}</span>}
           <h1>{title}</h1>
           {children}
         </div>
@@ -308,8 +308,37 @@ export function FaqItem({ q, a, defaultOpen = false }) {
 // stuck up by hand, with a handwritten caption. Deliberately imperfect
 // (varied rotation + pin colour) so it reads as a memory wall, not a grid.
 export function PolaroidWall({ photos }) {
+  const trackRef = React.useRef(null);
+  const pausedRef = React.useRef(false);
+  const resumeTimer = React.useRef(null);
+
+  React.useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    const id = setInterval(() => {
+      if (pausedRef.current) return;
+      const card = track.querySelector(".cdc-polaroid");
+      const step = card ? card.offsetWidth + 48 : 300;
+      const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+      track.scrollTo({ left: atEnd ? 0 : track.scrollLeft + step, behavior: "smooth" });
+    }, 2800);
+    return () => clearInterval(id);
+  }, []);
+
+  const pause = () => { pausedRef.current = true; clearTimeout(resumeTimer.current); };
+  const resume = () => { resumeTimer.current = setTimeout(() => { pausedRef.current = false; }, 2000); };
+
   return (
-    <div className="cdc-corkboard">
+    <div
+      className="cdc-corkboard"
+      ref={trackRef}
+      onPointerDown={pause}
+      onPointerUp={resume}
+      onMouseEnter={pause}
+      onMouseLeave={resume}
+      onTouchStart={pause}
+      onTouchEnd={resume}
+    >
       <div className="cdc-corkboard-string" aria-hidden="true" />
       {photos.map((p, i) => (
         <Reveal
@@ -334,7 +363,7 @@ export function CtaBand() {
       <div className="cdc-shell cdc-cta-inner">
         <div>
           <h2>Join Core Support Care and live your best life!</h2>
-          <p>Contact our friendly team on 1800 95 6474 to enquire today.</p>
+          <p>Contact our friendly team on 1800 956 474 to enquire today.</p>
         </div>
         <Link
           to="/contact"

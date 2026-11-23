@@ -20,7 +20,7 @@ function GoogleLogo({ size = 14 }) {
 const ANNOUNCEMENTS = [
   { text: "Servicing all areas of Greater Sydney" },
   { text: "Refer a Participant", to: "/refer-a-participant" },
-  { text: "Call us on 1800 95 6474", href: "tel:1800956474" },
+  { text: "Call us on 1800 956 474", href: "tel:1800956474" },
 ];
 
 const HOLD_MS = 3200;    // how long a message sits fully visible
@@ -68,7 +68,7 @@ function AnnouncementBar() {
 const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about-us" },
-  { label: "Our Services", to: "/day-programs", dropdown: true },
+  { label: "Our Services", to: "/group-home-sil", dropdown: true },
   { label: "Careers", to: "/careers" },
 ];
 
@@ -97,10 +97,10 @@ export default function Header() {
           </Link>
 
           <div className="cdc-google-rating cdc-google-rating-center" aria-label="Rated 5.0 stars on Google">
-            <GoogleLogo size={16} />
+            <GoogleLogo size={20} />
             <span className="cdc-google-rating-stars">
               {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={12} fill="currentColor" strokeWidth={0} />
+                <Star key={i} size={16} fill="currentColor" strokeWidth={0} />
               ))}
             </span>
             <strong>5.0</strong> Google Rating
@@ -108,7 +108,7 @@ export default function Header() {
 
           <div className="cdc-utility-actions">
             <a href="tel:1800956474" className="cdc-btn cdc-btn-sky cdc-btn-sm cdc-phone-pill">
-              <Phone size={15} /> 1800 95 6474
+              <Phone size={15} /> 1800 956 474
             </a>
             <Link to="/refer-a-participant" className="cdc-btn cdc-btn-sky cdc-btn-sm cdc-referral-pill">Referral</Link>
             <Link to="/contact" className="cdc-btn cdc-btn-gradient cdc-btn-sm">Enquire Now</Link>

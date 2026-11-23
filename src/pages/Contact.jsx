@@ -10,7 +10,7 @@ export default function Contact() {
 
   useSEO({
     title: "Contact Us",
-    description: "Get in touch with Core Support Care. Call 1800 95 6474 or send an enquiry — our friendly team responds within one business day.",
+    description: "Get in touch with Core Support Care. Call 1800 956 474 or send an enquiry — our friendly team responds within one business day.",
     path: "/contact",
   });
 
@@ -51,7 +51,7 @@ export default function Contact() {
               <div style={{ display: "flex", flexDirection: "column", gap: "1.1rem" }}>
                 <a href="tel:1800956474" className="cdc-contact-info-row" style={{ color: "var(--white)" }}>
                   <span style={{ width: 38, height: 38, borderRadius: "50%", background: "rgba(255,255,255,.2)", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}><Phone size={17} /></span>
-                  1800 95 6474
+                  1800 956 474
                 </a>
                 <a href="mailto:info@coresupportcare.com.au" className="cdc-contact-info-row" style={{ color: "var(--white)" }}>
                   <span style={{ width: 38, height: 38, borderRadius: "50%", background: "rgba(255,255,255,.2)", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}><Mail size={17} /></span>
@@ -59,7 +59,7 @@ export default function Contact() {
                 </a>
                 <div className="cdc-contact-info-row" style={{ color: "var(--white)" }}>
                   <span style={{ width: 38, height: 38, borderRadius: "50%", background: "rgba(255,255,255,.2)", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}><MapPin size={17} /></span>
-                  Suite 4, 88 Restwell Street, Bankstown NSW 2200
+                  212/7B Olive St, Seven Hills NSW 2147
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function Contact() {
               <div className="cdc-form-card" style={{ alignItems: "flex-start" }}>
                 <CheckCircle2 size={26} color="var(--pink)" />
                 <strong style={{ fontFamily: "'Baloo 2', sans-serif", color: "var(--navy)", fontSize: "1.1rem" }}>Thanks — your enquiry is in!</strong>
-                <p style={{ color: "var(--ink-soft)" }}>We'll be in touch within one business day. For anything urgent, call us directly on 1800 95 6474.</p>
+                <p style={{ color: "var(--ink-soft)" }}>We'll be in touch within one business day. For anything urgent, call us directly on 1800 956 474.</p>
                 <button className="cdc-btn cdc-btn-ghost cdc-btn-sm" onClick={() => { setSubmitted(false); setForm({ name: "", email: "", phone: "", message: "" }); }}>
                   Send another enquiry
                 </button>

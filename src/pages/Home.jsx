@@ -8,6 +8,18 @@ import { useSEO, SITE_URL } from "../hooks/useSEO.js";
 
 const ABOUT_TABS = [
   {
+    label: "Our Team",
+    img: IMG.ourTeam,
+    content: (
+      <p>
+        Our leadership team brings together a wide mix of skills, experience and backgrounds.
+        Working as one keeps our support grounded in <strong>best practice</strong> and is what
+        makes Core different. We partner closely with participants, families and other NDIS
+        providers to link people with the tools and resources they need.
+      </p>
+    ),
+  },
+  {
     label: "What We Do",
     img: IMG.ourWork,
     content: (
@@ -20,18 +32,6 @@ const ABOUT_TABS = [
         </ul>
         <p>Every service is shaped around the individual, so each participant is supported with dignity, respect and real choice.</p>
       </>
-    ),
-  },
-  {
-    label: "Our Team",
-    img: IMG.ourTeam,
-    content: (
-      <p>
-        Our leadership team brings together a wide mix of skills, experience and backgrounds.
-        Working as one keeps our support grounded in <strong>best practice</strong> and is what
-        makes Core different. We partner closely with participants, families and other NDIS
-        providers to link people with the tools and resources they need.
-      </p>
     ),
   },
   {
@@ -65,10 +65,10 @@ export default function Home() {
       email: "info@coresupportcare.com.au",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Suite 4, 88 Restwell Street",
-        addressLocality: "Bankstown",
+        streetAddress: "212/7B Olive St",
+        addressLocality: "Seven Hills",
         addressRegion: "NSW",
-        postalCode: "2200",
+        postalCode: "2147",
         addressCountry: "AU",
       },
       areaServed: "Greater Sydney, NSW",
@@ -139,8 +139,8 @@ export default function Home() {
                 <span className="cdc-trust-more">4.9★</span>
               </div>
               <div>
-                <strong>Trusted by 900+ families</strong>
-                <span>across Greater Sydney</span>
+                <strong style={{ color: "var(--purple)" }}>Empowering Lives</strong>
+                <span>Across The States</span>
               </div>
             </div>
           </div>
@@ -168,6 +168,19 @@ export default function Home() {
               { src: REAL_PHOTOS.gardenMentor, rotate: -5, pin: "pink", caption: "Hands-on skill building", alt: "A support worker and a participant tending plants together at a garden centre" },
               { src: REAL_PHOTOS.cafeFriends, rotate: 4, pin: "sky", caption: "Work-ready and smiling", alt: "Two colleagues laughing together behind a cafe counter" },
               { src: REAL_PHOTOS.siblingsLaugh, rotate: -3, pin: "yellow", caption: "Friendship and fun", alt: "Two participants laughing together" },
+              { src: REAL_PHOTOS.seniorWalk, rotate: 5, pin: "pink", caption: "A walk and a good chat", alt: "A support worker walking alongside a participant" },
+              { src: REAL_PHOTOS.wheelchairCarer, rotate: -4, pin: "sky", caption: "Support that shows up", alt: "A carer supporting a participant in a wheelchair" },
+              { src: REAL_PHOTOS.playgroundBoy, rotate: 3, pin: "yellow", caption: "Making the most of playtime", alt: "A participant enjoying time at a playground" },
+              { src: REAL_PHOTOS.grandmotherGranddaughter, rotate: -5, pin: "pink", caption: "Family moments that matter", alt: "A grandmother and granddaughter sharing a happy moment" },
+              { src: REAL_PHOTOS.careersHandshake, rotate: 4, pin: "sky", caption: "Welcoming new team members", alt: "Two Core Support Care team members shaking hands" },
+              { src: REAL_PHOTOS.homecareKitchen, rotate: -3, pin: "yellow", caption: "Cooking up independence", alt: "A support worker and participant preparing a meal in the kitchen" },
+              { src: REAL_PHOTOS.aboutTeamMeeting, rotate: 5, pin: "pink", caption: "Planning it together", alt: "The Core Support Care team meeting together" },
+              { src: REAL_PHOTOS.silHoistBedroom, rotate: -4, pin: "sky", caption: "A home that's genuinely yours", alt: "A comfortable, accessible SIL bedroom" },
+              { src: REAL_PHOTOS.communityFriendsHug, rotate: 3, pin: "yellow", caption: "Community, not just care", alt: "Friends sharing a hug in the community" },
+              { src: REAL_PHOTOS.communityAccessHallway, rotate: -5, pin: "pink", caption: "Out and about in the community", alt: "A support worker and participant walking through a community hallway" },
+              { src: REAL_PHOTOS.respiteGardenRoom, rotate: 4, pin: "sky", caption: "Rest and recharge", alt: "A peaceful respite room looking out to the garden" },
+              { src: REAL_PHOTOS.dayProgramPainting, rotate: -3, pin: "yellow", caption: "Creativity in full colour", alt: "A participant painting during a Day Program activity" },
+              { src: REAL_PHOTOS.silLivingSupport, rotate: 5, pin: "pink", caption: "Everyday support, every day", alt: "A support worker helping a participant with daily living" },
             ]}
           />
         </div>
@@ -277,7 +290,7 @@ export default function Home() {
           <Reveal className="cdc-section-head">
             <span className="cdc-script">Common questions</span>
             <h2>Frequently asked questions</h2>
-            <p>Can't find what you're after? Call our friendly team on 1800 95 6474.</p>
+            <p>Can't find what you're after? Call our friendly team on 1800 956 474.</p>
           </Reveal>
           <div className="cdc-faq-list">
             {FAQS.map((f, i) => (
