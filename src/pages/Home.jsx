@@ -15,7 +15,7 @@ const ABOUT_TABS = [
         Our leadership team brings together a wide mix of skills, experience and backgrounds.
         Working as one keeps our support grounded in <strong>best practice</strong> and is what
         makes Core different. We partner closely with participants, families and other NDIS
-        providers to link people with the tools and resources they need.
+        providers to link people with the tools and resources they want.
       </p>
     ),
   },
